@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="tooltip">Notifications</div>
+          <div class="notifications-count">3</div>
+        </div>
+        <img class="current-user-picture" src="channel-pictures/my-channel.jpg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </a>
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@mkbhd" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-1.jpeg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Marques Brownlee
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      15M subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+              </a>
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                3.4M views &#183; 6 months ago
+              </p>
+            </div>       
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=kiLwOUjrq5E" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp"> 
+            </a>        
+            <div class="video-time">27:27</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@imamuroom" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-2.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-2.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Imamu room
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      1.23M subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=kiLwOUjrq5E" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  【A week of husband lunch boxes #48】Izakaya night at home🏮🍺
+                </p>
+              </a>
+              <p class="video-author">
+                Imamu room
+              </p>
+              <p class="video-stats">
+                230k views &#183; 8 days ago
+              </p>
+            </div>       
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            </a>
+            <div class="video-time">7:53</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@InsiderBusiness" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-3.jpeg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Business Insider
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      7.82M subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+                </p>
+              </a>
+              <p class="video-author">
+                Business Insider
+              </p>
+              <p class="video-stats">
+                14M views &#183; 1 year ago
+              </p>
+            </div>       
+          </div>
+        </div> 
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=zuCRSwWssVk" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+            </a>
+            <div class="video-time">11:54:58</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@Aestheticlofi." target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-4.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-4.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Aesthetic Lofi
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      134K subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=zuCRSwWssVk" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  Just relax 🍀 stop overthinking, calm your anxiety
+                </p>
+              </a>
+              <p class="video-author">
+                Aesthetic Lofi
+              </p>
+              <p class="video-stats">
+                1.5M views &#183; 8 months ago
+              </p>
+            </div>       
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=UJjBKimXni4" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            </a>
+            <div class="video-time">6:12</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@menguiny" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-5.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-5.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      menguiny
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      558 subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=UJjBKimXni4" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  2023 Cozy Desk Setup Makeover
+                </p>
+              </a>
+              <p class="video-author">
+                menguiny
+              </p>
+              <p class="video-stats">
+                19K views &#183; 3 weeks ago
+              </p>
+            </div>       
+          </div>
+        </div>  
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=MJUssi2c6Ls" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+            </a>
+            <div class="video-time">1:19:31</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@MrWebDesignerAnas" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-6.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-6.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Mr. Web Designer
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      1.23M subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=MJUssi2c6Ls" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  Complete Responsive Food / Restaurant Website Design
+                </p>
+              </a>
+              <p class="video-author">
+                Mr. Web Designer
+              </p>
+              <p class="video-stats">
+                184K views &#183; 1 year ago
+              </p>
+            </div>       
+          </div>
+        </div>
+
+
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=1bP6E3TRho8" target="_blank">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+            </a>
+            <div class="video-time">19:53</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@MKV2020" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-7.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-7.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      MK V
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      429K subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=1bP6E3TRho8" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  Unboxing Unnecessary Kawaii Gadgets For My Desk and Switch 🧡 TEMU HAUL 🧡
+                </p>
+              </a>
+              <p class="video-author">
+                MK V
+              </p>
+              <p class="video-stats">
+                15K views &#183; 3 days ago
+              </p>
+            </div>       
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=TLr770QgRA0" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.webp"> 
+            </a>        
+            <div class="video-time">26:27</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@banbancamping" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-8.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-8.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      반반한캠핑 Bancamp
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      89.1K subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=TLr770QgRA0" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  [SUB]A rainy day 🌧️ Grand valley with no one / Summer camp in Korea
+                </p>
+              </a>
+              <p class="video-author">
+                반반한캠핑 Bancamp
+              </p>
+              <p class="video-stats">
+                193K views &#183; 11 days ago
+              </p>
+            </div>       
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=SEsZt_wIKu0" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
+            </a>
+            <div class="video-time">48:37</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@BrandonButch" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-9.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-9.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Brandon Butch
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      1.06M subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=SEsZt_wIKu0" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  iOS 17 - 140+ New Features & Changes!
+                </p>
+              </a>
+              <p class="video-author">
+                Brandon Butch
+              </p>
+              <p class="video-stats">
+                605K views &#183; 12 days ago
+              </p>
+            </div>       
+          </div>
+        </div> 
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ZNJ3iKHCo7Y" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
+            </a>
+            <div class="video-time">32:28</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@CamilleVilla" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-10.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-10.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Camille Villa
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      53.8K subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=ZNJ3iKHCo7Y" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  *small* ROOM MAKEOVER of a design student! (concrete finish wall, standing desk setup, lounge area)
+                </p>
+              </a>
+              <p class="video-author">
+                Camille Villa
+              </p>
+              <p class="video-stats">
+                259K views &#183; 7 months ago
+              </p>
+            </div>       
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=uQ2rJKiiRiU" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
+            </a>
+            <div class="video-time">20:15</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@LearnEnglishWithTVSeries" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-11.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-11.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Learn English With TV Series
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      7.38M subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=uQ2rJKiiRiU" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  Learn ENGLISH with Disney's TANGLED
+                </p>
+              </a>
+              <p class="video-author">
+                Learn English With TV Series
+              </p>
+              <p class="video-stats">
+                400K views &#183; 1 month ago
+              </p>
+            </div>       
+          </div>
+        </div>   
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=hON5t_69TBk" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
+            </a>
+            <div class="video-time">15:39</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@JilleeArts" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channel-12.jpg">
+                </a> 
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-12.jpg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Jillee Arts
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      97.4K subscribers
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=hON5t_69TBk" target="_blank" class="video-title-link">
+                <p class="video-title"> 
+                  Loose Ink & Watercolor Sketching Tutorial l How to Sketch a Café
+                </p>
+              </a>
+              <p class="video-author">
+                Jillee Arts
+              </p>
+              <p class="video-stats">
+                1.2M views &#183; 8 months ago
+              </p>
+            </div>       
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
